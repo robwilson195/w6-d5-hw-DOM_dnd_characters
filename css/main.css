@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border-bottom: red solid 4px;
+}
+h1  {
+  color: white;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  height: 50px;
+  background-color: black;
+  border-top: red solid 4px;
+  margin-top: 50px;
+}
+
+footer p {
+  color: white;
+  margin-left: 4vw;
+}
+
+.character-entry {
+  border: 1px black solid;
+  border-radius: 10px;
+  min-width: 35vw;
+  min-height: 25vh;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.characters-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

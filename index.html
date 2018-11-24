@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>DnD Characters</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>DnD Character Recorder</h1>
+    <img src="css/images/dnd5logo.png" alt="dnd logo">
+  </header>
+  <form id="new-character-form">
+    <div class="form-wrapper">
+      <div class="form-item">
+        <label for="name">Name:</label>
+        <input type="text" name="name"/>
+      </div>
+      <div class="form-item">
+        <label for="race">Race:</label>
+        <select class="race-select" name="race">
+          <option disabled selected>Choose a Race</option>
+          <option>Dwarf</option>
+          <option>Elf</option>
+          <option>Human</option>
+          <option>Halfling</option>
+          <option>Gnome</option>
+          <option>Dragonborn</option>
+          <option>Tiefling</option>
+          <option>Half-Elf</option>
+          <option>Half-Orc</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="specialty">Class:</label>
+        <select class="class-select" name="specialty">
+          <option disabled selected>Choose a Class</option>
+          <option>Barbarian</option>
+          <option>Bard</option>
+          <option>Cleric</option>
+          <option>Druid</option>
+          <option>Fighter</option>
+          <option>Monk</option>
+          <option>Paladin</option>
+          <option>Ranger</option>
+          <option>Rogue</option>
+          <option>Sorceror</option>
+          <option>Warlock</option>
+          <option>Wizard</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <div class="attribute-item">
+          <label for="str">Str:</label>
+          <input min="0" type="number" name="str">
+        </div>
+        <div class="attribute-item">
+          <label for="dex">Dex:</label>
+          <input min="0" type="number" name="dex">
+        </div>
+        <div class="attribute-item">
+          <label for="con">Con:</label>
+          <input min="0" type="number" name="con">
+        </div>
+        <div class="attribute-item">
+          <label for="int">Int:</label>
+          <input min="0" type="number" name="int">
+        </div>
+        <div class="attribute-item">
+          <label for="wis">Wis:</label>
+          <input min="0" type="number" name="wis">
+        </div>
+        <div class="attribute-item">
+          <label for="cha">Cha:</label>
+          <input min="0" type="number" name="cha">
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="skill-item">
+          <label for="skills">Skill Proficiences:</label>
+          <select multiple="multiple" class="skills-select" name="skills[]">
+            <option >Athletics</option>
+            <option >Actobatics</option>
+            <option >Sleight of Hand</option>
+            <option >Stealth</option>
+            <option >Arcana</option>
+            <option >History</option>
+            <option >Investigation</option>
+            <option >Nature</option>
+            <option >Religion</option>
+            <option >Animal Handling</option>
+            <option >Insight</option>
+            <option >Medicine</option>
+            <option >Perception</option>
+            <option >Survival</option>
+            <option >Deception</option>
+            <option >Intimidation</option>
+            <option >Performance</option>
+            <option >Persuasion</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-item">
+        <input type="submit" value="Save">
+      </div>
+    </div>
+  </form>
+  <section class="main-section">
+    <h3>Characters</h3>
+    <div class="characters-wrapper">
+      <div class="character-entry">
+        <h4>Ulfgarr Surefoot</h4>
+        <p>Dwarf Barbarian</p>
+        <ul>
+          <li>Str: 16</li>
+          <li>Dex: 14</li>
+          <li>Con: 16</li>
+          <li>Int: 10</li>
+          <li>Wis: 10</li>
+          <li>Con: 10</li>
+        </ul>
+      </div>
+      <div class="character-entry">
+        <h4>Groot Strongboot</h4>
+        <p>Elf Warlock</p>
+        <ul>
+          <li>Str: 16</li>
+          <li>Dex: 14</li>
+          <li>Con: 16</li>
+          <li>Int: 10</li>
+          <li>Wis: 10</li>
+          <li>Con: 10</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Rob Wilson</p>
+  </footer>
+</body>
+</html>
