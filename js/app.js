@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleForm = function (event) {
   event.preventDefault();
 
-  // console.log(this.skills.val());
+  console.dir(document.querySelector('.skills-select'));
+  console.log(this.skills);
+  console.dir(this)
 
   const newCharacter = document.createElement('div');
   newCharacter.classList.add('character-entry');
