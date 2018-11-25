@@ -3,16 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-character-form');
   form.addEventListener('submit', handleForm);
 
-  // const deleteButton = document.querySelector('#delete-all-button');
-  // deleteButton.addEventListener('click', handleDelete);
+  const deleteButton = document.querySelector('#delete-all-button');
+  deleteButton.addEventListener('click', handleDelete);
 });
 
 const handleForm = function (event) {
   event.preventDefault();
 
-  console.dir(document.querySelector('.skills-select'));
-  console.log(this.skills);
-  console.dir(this)
+  // console.dir(document.querySelector('.skills-select'));
+  // console.log(this.skills);
+  // console.dir(this)
+
+  const skillsArray = Array.from(this.skills).filter((option) => {
+    option.selected
+  });
+  console.log(skillsArray);
 
   const newCharacter = document.createElement('div');
   newCharacter.classList.add('character-entry');
@@ -35,4 +40,9 @@ const handleForm = function (event) {
     currentAttribute.textContent = `${attributes[i]}: ${attributes[i+1]}`;
     characterAttributes.appendChild(currentAttribute);
   }
+}
+
+const handleDelete = function () {
+  characterLibrary = document.querySelector('.characters-wrapper')
+  characterLibrary.textContent = '';
 }
