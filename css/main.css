@@ -47,3 +47,15 @@ footer p {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.character-entry h4, .character-entry p, .character-entry ul {
+  margin: 5px; auto;
+}
+
+.character-entry ul {
+  list-style-type: none;
+}
+
+.numbers-wrapper {
+  display: flex;
+}
