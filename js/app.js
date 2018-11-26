@@ -50,6 +50,7 @@ const handleForm = function (event) {
     characterProfs.appendChild(currentProficiency);
   }
 
+  this.reset();
 }
 
 const handleDelete = function () {

@@ -37,7 +37,7 @@ footer p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 82vw;
   flex-wrap: wrap;
   margin: 10px auto;
   border: black solid 2px;
@@ -58,15 +58,21 @@ footer p {
 
 input[type=number] {
   width: 30px;
+  border: grey 1px solid;
+
 }
 
 input[type=text] {
   width: 200px;
+  border: grey 1px solid;
+
 }
 
 .skill-item select {
   height: 100px;
   margin-left: 10px;
+  width: 120px;
+  border: grey 1px solid;
 }
 
 .skill-item label {
@@ -76,7 +82,7 @@ input[type=text] {
 }
 
 h3 {
-  margin: 10px auto;
+  margin-top: 30px;
   position: relative;
   left: 46.5vw;
   text-decoration: underline;
@@ -96,10 +102,12 @@ h3 {
   border-radius: 10px;
   min-width: 35vw;
   min-height: 25vh;
-  padding: 0 10px;
+  padding: 5px 10px;
   margin: 10px;
   box-shadow: 3px 3px 10px;
   align-items: 0 auto;
+  text-align: center;
+
 }
 
 .characters-wrapper {
@@ -113,10 +121,14 @@ h3 {
   margin: 5px; auto;
 }
 
+
 .character-entry ul {
   list-style-type: none;
 }
 
 .numbers-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
