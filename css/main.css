@@ -32,6 +32,65 @@ footer p {
   margin-left: 4vw;
 }
 
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  border: black solid 2px;
+  border-radius: 20px;
+  padding: 10px 0;
+  box-shadow: 3px 3px 10px;
+
+}
+
+#delete-all-button {
+  position: relative;
+  left: 35vw;
+}
+
+.form-item {
+  margin: 5px;
+}
+
+input[type=number] {
+  width: 30px;
+}
+
+input[type=text] {
+  width: 200px;
+}
+
+.skill-item select {
+  height: 100px;
+  margin-left: 10px;
+}
+
+.skill-item label {
+  position: relative;
+  bottom: 41px;
+
+}
+
+h3 {
+  margin: 10px auto;
+  position: relative;
+  left: 46.5vw;
+  text-decoration: underline;
+}
+
+.attribute-wrapper {
+  display: flex;
+
+}
+
+.attribute-item {
+  margin-left: 5px;
+}
+
 .character-entry {
   border: 1px black solid;
   border-radius: 10px;
@@ -39,6 +98,8 @@ footer p {
   min-height: 25vh;
   padding: 0 10px;
   margin: 10px;
+  box-shadow: 3px 3px 10px;
+  align-items: 0 auto;
 }
 
 .characters-wrapper {
